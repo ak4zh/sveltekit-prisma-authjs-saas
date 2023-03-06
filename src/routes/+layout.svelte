@@ -81,7 +81,7 @@
 					<BottomNavigation />
 				</div>
             {/if}
-            <div class="flex-1">
+            <div class="flex-1 mx-auto w-full lg:max-w-screen-2xl p-4">
                 <slot />
             </div>        
 		</div>

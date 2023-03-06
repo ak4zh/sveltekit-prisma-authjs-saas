@@ -10,5 +10,7 @@ export const handle = SvelteKitAuth({
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-ignore
 	providers: [GitHub({ clientId: GITHUB_ID, clientSecret: GITHUB_SECRET })],
+	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+	// @ts-ignore
 	adapter: PrismaAdapter(prisma)
 });
