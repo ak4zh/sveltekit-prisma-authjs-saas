@@ -1,12 +1,5 @@
 <script lang="ts">
-	import {
-		App,
-		Page,
-		Navbar,
-		Preloader,
-		NavbarBackLink,
-		Toggle
-	} from 'konsta/svelte';
+	import { App, Page, Navbar, Preloader, NavbarBackLink, Toggle } from 'konsta/svelte';
 	import { MetaTags } from 'svelte-meta-tags';
 
 	import '../app.css';
@@ -80,10 +73,10 @@
 				<div class="w-20">
 					<BottomNavigation />
 				</div>
-            {/if}
-            <div class="flex-1 mx-auto w-full lg:max-w-screen-2xl p-4">
-                <slot />
-            </div>        
+			{/if}
+			<div class="flex-1 w-full mx-auto">
+				<slot />
+			</div>
 		</div>
 	</Page>
 </App>

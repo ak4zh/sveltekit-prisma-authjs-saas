@@ -11,11 +11,11 @@
 			<img
 				class="rounded-lg w-20"
 				slot="media"
-				src="{$page.data.session.user.image}"
+				src={$page.data.session.user.image}
 				width="80"
 				alt="demo"
 			/>
-			<SignOutButton slot="after"/>
+			<SignOutButton slot="after" />
 		</ListItem>
 	</List>
 {/if}
