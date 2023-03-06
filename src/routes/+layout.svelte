@@ -3,12 +3,9 @@
 		App,
 		Page,
 		Navbar,
-		Link,
 		Preloader,
 		NavbarBackLink,
-		Toggle,
-		Segmented,
-		SegmentedButton
+		Toggle
 	} from 'konsta/svelte';
 	import { MetaTags } from 'svelte-meta-tags';
 
@@ -60,25 +57,7 @@
 				{/if}
 			</svelte:fragment>
 			<svelte:fragment slot="right">
-				<div class="flex">
-					{#if $page.url.pathname !== '/'}
-						<Link href="/">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="1.5"
-								stroke="currentColor"
-								class="w-6 h-6"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-								/>
-							</svg>
-						</Link>
-					{/if}
+				<div class="flex space-x-4">
 					<Toggle
 						colors={toggleColors}
 						onChange={() => {
@@ -96,13 +75,13 @@
 				<Preloader size="w-16 h-16" />
 			</div>
 		{/if}
-		<div class="flex flex-col lg:flex-row gap-4">
+		<div class="flex flex-col lg:flex-row">
 			{#if $page.data?.session?.user}
 				<div class="w-20">
 					<BottomNavigation />
 				</div>
             {/if}
-            <div>
+            <div class="flex-1">
                 <slot />
             </div>        
 		</div>

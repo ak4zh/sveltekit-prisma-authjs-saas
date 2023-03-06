@@ -1,7 +1,7 @@
 import { writable, type Writable } from 'svelte/store';
-import { writable as localWritable } from 'svelte-local-storage-store';
+import { persisted } from 'svelte-local-storage-store';
 
-export const preferencesStore = localWritable('preferences', {
+export const preferencesStore = persisted('preferences', {
 	theme: 'material',
 	darkMode: false
 });

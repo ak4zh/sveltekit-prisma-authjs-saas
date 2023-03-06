@@ -9,7 +9,7 @@
 <Tabbar
 	labels={isTabbarLabels}
 	icons={isTabbarIcons}
-	class="left-0 bottom-0 fixed lg:w-fit lg:h-full lg:ios:top-11 lg:material:top-16 [&>div:nth-child(2)]:lg:flex-col [&>div:nth-child(2)]:lg:h-fit lg:material:p-2"
+	class="left-0 bottom-0 fixed lg:w-fit lg:h-full lg:ios:top-11 lg:material:top-16 [&>div:nth-child(2)]:lg:flex-col [&>div:nth-child(2)]:lg:h-fit lg:material:p-2 lg:ios:p-3"
 >
 	<TabbarLink
 		active={activeTab === 'settings'}
