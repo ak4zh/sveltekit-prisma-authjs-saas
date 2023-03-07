@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex flex-col justify-center items-center gap-4">
-	<h1 class="pt-14 text-[23vw] text-center sm:text-9xl leading-none select-none tracking-tightest font-extrabold 2xl:flex">
+	<h1 class="pt-14 text-[18vw] text-center sm:text-9xl leading-none select-none tracking-tightest font-extrabold 2xl:flex">
 		<span
 			data-content="Create."
 			class="relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:animate-gradient-background-1"
@@ -40,9 +40,21 @@
 			class="relative block"
 		>
 			<span
-				class="px-2 text-teal-500"
+				class="px-2"
 			>
 				Deploy.</span
+			>
+		</span>
+	</h1>
+	<h1 class="text-[18vw] text-center sm:text-9xl leading-none select-none tracking-tightest font-extrabold 2xl:flex">
+		<span
+			data-content="Deploy."
+			class="relative block"
+		>
+			<span
+				class="px-2 text-teal-500 animate-pulse"
+			>
+				Go live.</span
 			>
 		</span>
 	</h1>
